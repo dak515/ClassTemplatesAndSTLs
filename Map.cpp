@@ -1,4 +1,4 @@
-/* #include <iostream>
+#include <iostream>
 #include <fstream>
 #include <string>
 #include <algorithm>
@@ -84,4 +84,4 @@ int main() {
 
 system("pause");
 return(0);
-} */
+} 
