@@ -1,2 +1,9 @@
 # ClassTemplatesAndSTLs
-List, vector, map, stack and deque
+
+Concepts demonstrated:
+
+- Class templates
+- Operator overloading
+- Vector
+- List
+- Map
