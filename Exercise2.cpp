@@ -1,0 +1,62 @@
+#include <iostream>
+#include <fstream>
+#include <string>
+#include <vector>
+
+using namespace std;
+
+template <class T>
+class Number {
+private:
+	T value;
+
+public:
+	Number(T val)
+	{
+		value = val;
+	}
+	Number()
+	{
+		value = 5;
+	}
+	Number operator+(const Number& N) {
+		Number N1;
+		N1.value = this->value + N.value;
+		return N1;
+	}
+	Number operator-(const Number& N) {
+		Number N1;
+		N1.value = this->value - N.value;
+		return N1; //this returns an object
+
+		//return this->value - N.value; // returns a value only
+	}
+	Number operator*(const Number& N) {
+		Number N1;
+		N1.value = this->value * N.value;
+		return N1;
+	}
+	Number operator/(const Number& N) {
+		Number N1;
+		N1.value = this->value / N.value;
+		return N1;
+	} 
+	void set_value(T val){
+		value = val;
+	}
+	T get_value(){
+		return(value);
+	}
+};
+
+int main() {
+
+	Number<int> number1(5);
+	Number<int> number2(7);
+	Number<int> number3;
+
+	number3 = number1 - number2;
+	cout << number3.get_value() << endl;
+	system("pause");
+	return(0);
+} 
